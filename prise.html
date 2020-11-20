@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LicenPlan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wraper">
+        <form class="form" action="">
+            <div class="form__PlansWraper">
+                <div class="form__PlanWraper">
+                    <input class="form__PlanRadio" id="check1" type="radio" name="typePlan">
+                    <label for="check1" class="form__PlanLabel">Licen plan #<i class="number">1</i></label>
+                    <p>$ <i class="form__Planprise">13</i> per licence</p> 
+                </div>
+                <div class="form__PlanWraper">
+                    <input class="form__PlanRadio" id="check2" type="radio" name="typePlan">
+                    <label for="check2" class="form__PlanLabel">Licen plan #<i class="number">2</i></label>
+                    <p>$ <i class="form__Planprise">22</i> per licence</p>
+                </div>
+                <div class="form__PlanWraper">
+                    <input class="form__PlanRadio" id="check3" type="radio" name="typePlan">
+                    <label for="check3" class="form__PlanLabel">Licen plan #<i class="number">3</i></label>
+                    <p>$ <i class="form__Planprise">34</i> per licence</p>
+                </div>
+            </div>
+            <div class="form__nuberWraper">
+                <label class="form__listCoef"> Number of licenses
+                    <select id="coef">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                </label>
+            </div>
+            <div class="form__Result">
+                <p>Total: <b>$</b><i id="summ">340</i><sup>us</sup> </p>
+            </div>
+            <div class="form__SubmitWraper">
+                <input type="submit" value="buy now">
+            </div>
+            <div class="form__activPlanWraper">
+                <p>Selected plan #<i id="numberResult">3</i></p>
+            </div>
+        </form>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>

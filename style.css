@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Bebas", Arial, Helvetica, sans-serif;
+    src: url(Bebas.woff) format('woff'), url(Bebas.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Bebas", Arial, Helvetica, sans-serif;
+    src: url(BebasBold.woff) format('woff'), url(BebasBold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+
+html, body {margin: 0; padding: 0; font-family: "Bebas", Arial, Helvetica, sans-serif;}
+i {
+    font-style: normal;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #787777;
+}
+
+.wraper {
+    padding: 10px;
+    background-color: #F8F8F8;
+    border: 10px solid #EBEBEB;
+    width: 400px;
+}
+.form__PlanWraper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.form__PlanLabel {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+
+}
+.form__PlanRadio+label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    border: 3px solid #DADADA;
+    border-radius: 50%;
+}
+.form__PlanRadio {
+    display: none;
+}  
+.form__PlanRadio:checked+label::before {
+    border: 3px solid #34648E;
+}
+.form__PlanRadio:checked+label::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 6px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #0294BF;
+}
+.form__PlanWraper {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+.form__PlanWraper--active {
+    border-top:1px solid #BCD9E3;
+    border-bottom:1px solid #BCD9E3;
+    background-color: #EBF4F7;
+}
+
+.form__PlanWraper p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.form__listCoef {
+    font-size: 12px;
+}
+#coef {
+    width: 40px;
+    padding: 3px 0;
+    outline: #98BAF1;
+}
+#coef:hover,
+#coef:focus {
+    border: 1px solid #98BAF1;
+    box-shadow: 0 0 2px #98BAF1;
+}
+
+.form__nuberWraper {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #EBEBEB;
+    border-bottom: 2px solid #EBEBEB;
+    padding: 20px 0;
+}
+.form__Result {
+    padding: 30px 0;
+}
+.form__Result p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form__Result b,
+.form__Result i,
+.form__Result sup {
+    font-weight: 400;
+    color: #5EA0B9;
+    font-weight: 700;
+}
+.form__Result sup {
+    font-size: 12px;
+}
+.form__SubmitWraper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.form__SubmitWraper input {
+    border: 0;
+    padding: 1rem 3rem;
+    background-color: #33A845;
+    color: #ffffff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.form__activPlanWraper p {
+    text-align: center;
+    color: #64A4BB;
+}
+
+.form__listCoef {
+    color: #000;
+}
